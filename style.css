@@ -1,0 +1,115 @@
+html {
+    margin: 0;
+    padding: 0;
+    /* background-color: #FCD4d2; */
+    /* background-image: -webkit-gradient(linear, left top, right top, from(#FCD4d2), color-stop(#f77e758f), color-stop(#FCD4d2), to(#f77e758f));
+    background-image: linear-gradient(to right, #FCD4d2, #f77e758f, #FCD4d2, #f77e758f); */
+    background-color: #FCF49A;
+    width: 100%;
+    height: 100vh;
+    font-family: 'roboto', sans-serif;
+    text-align: center;
+
+  }
+  
+  .box__text{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(49, 49, 49);
+    font-family: sans-serif;
+}
+p{
+    width: 1300px;
+    padding: 15px 10px;
+    border-radius: 233;
+    cursor: pointer;
+    text-align: justify, center;
+    text-decoration: none;
+}
+
+  .container {
+    width: 100%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  
+  .flip-box {
+    margin: 5px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    background-color: transparent;
+    width: 320px;
+    height: 230px;
+    -webkit-perspective: 1000px;
+            perspective: 1000px;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform 0.9s;
+    transition: -webkit-transform 0.9s;
+    transition: transform 0.9s;
+    transition: transform 0.9s, -webkit-transform 0.9s;
+    -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+  }
+  
+  .flip-box:hover {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
+  }
+  
+  .flip-box:hover .flip-box-back {
+    background-color: #f1c813 !important;
+  }
+  
+  .flip-box-front, .flip-box-back {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .flip-box-front {
+    background-size: contain;
+  }
+  
+  .flip-box-back {
+    color: white;
+    -webkit-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  
+  img {
+    width: 200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
